@@ -1,0 +1,27 @@
+-- SELECT * FROM att_dic_layerfields where LayerID = 223
+-- SELECT * FROM att_dic_layerfields where FieldName = 'DMCX'
+
+-- UPDATE zgdm
+-- INNER JOIN sxbzglb
+-- ON zgdm.BSM=sxbzglb.DMBSM
+-- SET zgdm.BZBSM=sxbzglb.BZBSM
+-- UPDATE zgdm set desbrif = CONCAT(SUBSTR(`地理实体概况`, 1, 40), "...")
+-- UPDATE zgdm set citycode = '0717'
+-- UPDATE zgdm set `dist` = SUBSTR(`地名代码`, 1, 12)
+-- UPDATE zgdm set `dist` = CONCAT(SUBSTR(`地名代码`, 1, 9), '000')
+-- SELECT * from zgdm where `地名代码` = ''
+-- UPDATE zgdm set `小类` = `类别名称`
+
+-- UPDATE zgdm
+-- INNER JOIN sys_dict
+-- ON zgdm.`dist` = sys_dict.`value`
+-- SET zgdm.`所在跨行政区` = sys_dict.label
+-- WHERE sys_dict.`type` = 'XZQ'
+
+-- SELECT * from zgdm WHERE `name` = '香溪河'
+SELECT * from zgdm WHERE `类别名称` = '农村居民点'
+-- SELECT * from zgdm WHERE `多媒体信息` = '大湾F11.jpg'
+-- UPDATE zgdm set brif = CONCAT(SUBSTR(`地名的含义`, 1, 40), "...")
+--
+
+

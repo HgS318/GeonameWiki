@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="default" extends="struts-default">
+        <action name="hello">
+            <result>
+                /index.jsp
+            </result>
+        </action>
+    </package>
+
+    <package name="p1m" extends="default">
+
+        <action name="searchPrepare" class="com.rs.geonameonemap.controllers.JsonAction01" method="searchPrepare" />
+        <action name="getSessionAttribute" class="com.rs.geonameonemap.controllers.JsonAction01" method="getSessionAttribute" />
+        <action name="randomResults" class="com.rs.geonameonemap.controllers.JsonAction01" method="randomResults" />
+        <action name="randomPlacesResults" class="com.rs.geonameonemap.controllers.JsonAction01" method="randomPlacesResults" />
+        <action name="randomDistsResults" class="com.rs.geonameonemap.controllers.JsonAction01" method="randomDistsResults" />
+        <action name="randomBoundsResults" class="com.rs.geonameonemap.controllers.JsonAction01" method="randomBoundsResults" />
+        <action name="randomBoundMarkersResults" class="com.rs.geonameonemap.controllers.JsonAction01" method="randomBoundMarkersResults" />
+
+        <action name="wholeGeonames" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeGeonames" />
+        <action name="easyGeonames" class="com.rs.geonameonemap.controllers.JsonAction01" method="easyGeonames" />
+
+        <action name="getEasyGeonamesByBigType" class="com.rs.geonameonemap.controllers.JsonAction01" method="getEasyGeonamesByBigType" />
+        <action name="getEasyGeonamesByType" class="com.rs.geonameonemap.controllers.JsonAction01" method="getEasyGeonamesByType" />
+        <action name="getEasyGeonamesByInitial" class="com.rs.geonameonemap.controllers.JsonAction01" method="getEasyGeonamesByInitial" />
+        <action name="getEasyGeonamesByWords" class="com.rs.geonameonemap.controllers.JsonAction01" method="getEasyGeonamesByWords" />
+        <action name="getGeonameSpecificInfo" class="com.rs.geonameonemap.controllers.JsonAction01" method="getGeonameSpecificInfo" />
+
+        <action name="getGeonameByNickname" class="com.rs.geonameonemap.controllers.JsonAction01" method="getGeonameByNickname" />
+        <action name="getGeonameInfoByNickname" class="com.rs.geonameonemap.controllers.JsonAction01" method="getGeonameInfoByNickname" />
+        <action name="getGeonameFullByNickname" class="com.rs.geonameonemap.controllers.JsonAction01" method="getGeonameFullByNickname" />
+        <action name="getGeonameFullById" class="com.rs.geonameonemap.controllers.JsonAction01" method="getGeonameFullById" />
+
+        <action name="wholeDists" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeDists" />
+        <action name="wholeEasyDists" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeEasyDists" />
+        <action name="getEasyDistInfoWithZeroChilds" class="com.rs.geonameonemap.controllers.JsonAction01" method="getEasyDistInfoWithZeroChilds" />
+        <action name="getDistInfoByNickname" class="com.rs.geonameonemap.controllers.JsonAction01" method="getDistInfoByNickname" />
+        <action name="getDistInfoByNum" class="com.rs.geonameonemap.controllers.JsonAction01" method="getDistInfoByNum" />
+
+        <action name="wholeTypes" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeTypes" />
+
+        <action name="wholeEasyBounds" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeEasyBounds" />
+        <action name="wholeBoundPaths" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeBoundPaths" />
+        <action name="getBoundInfoById" class="com.rs.geonameonemap.controllers.JsonAction01" method="getBoundInfoById" />
+
+        <action name="wholeEasyBoundMarkers" class="com.rs.geonameonemap.controllers.JsonAction01" method="wholeEasyBoundMarkers" />
+        <action name="getBoundMarkerInfoById" class="com.rs.geonameonemap.controllers.JsonAction01" method="getBoundMarkerInfoById" />
+        <action name="getBoundMarkerRelateDistsById" class="com.rs.geonameonemap.controllers.JsonAction01" method="getBoundMarkerRelateDistsById" />
+
+        <action name="tempHighSearch" class="com.rs.geonameonemap.controllers.JsonAction01" method="tempHighSearch" />
+
+        <action name="updateWikiPlace" class="com.rs.geonameonemap.controllers.JsonAction01" method="updateWikiPlace" />
+
+
+    </package>
+
+</struts>

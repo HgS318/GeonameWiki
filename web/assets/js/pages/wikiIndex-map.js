@@ -17,9 +17,9 @@ var in_query = false;
 
 // var my_service_url = 'http://localhost:6080/arcgis/rest/services/SampleWorldCities/MapServer';
 // var my_service_url = "http://10.5.220.20:6080/arcgis/rest/services/my_map_service_01/MapServer";
-var my_service_url = "http://localhost:6080/arcgis/rest/services/my_map_service_01/MapServer";
-// var my_service_url = "http://61.183.15.38:6080/arcgis/rest/services/my_map_service_01/MapServer";
 // var my_service_url = "http://10.5.220.242:6080/arcgis/rest/services/MyMapService/MapServer";
+// var my_service_url = "http://localhost:6080/arcgis/rest/services/my_map_service_01/MapServer";
+var my_service_url = "http://61.183.15.38:6080/arcgis/rest/services/my_map_service_01/MapServer";
 
 var query_point = L.esri.query({
     url: my_service_url
